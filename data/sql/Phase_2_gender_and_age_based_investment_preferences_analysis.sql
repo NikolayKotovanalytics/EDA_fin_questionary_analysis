@@ -7,7 +7,7 @@ SELECT
     gender,
     ROUND(100 * COUNT(CASE WHEN Investment_Avenues = 'Yes' THEN 1 END) / COUNT(*), 2
     ) AS Investment_Preference_Pct,
-    ROUND(100 * COUNT(CASE WHEN Stock_Marktet = 'Yes' THEN 1 END) / COUNT(*), 2
+    ROUND(100 * COUNT(CASE WHEN Stock_Market = 'Yes' THEN 1 END) / COUNT(*), 2
     ) AS Stock_Market_Investment_Preference_Pct -- Note: used for plotting a bar char later
 FROM finance_data
 GROUP BY gender;

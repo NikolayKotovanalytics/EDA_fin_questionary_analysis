@@ -1,21 +1,17 @@
+from pathlib import Path
+import math
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import math
-from pathlib import Path
 
 from db import get_db_engine
+engine = get_db_engine()
 
 # Output folder
 IMAGE_DIR = Path("data/images")
 IMAGE_DIR.mkdir(parents=True, exist_ok=True)
 
-engine = get_db_engine()
-
-
-from db import get_db_engine
-
-engine = get_db_engine()
 
 """
 Purpose:

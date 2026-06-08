@@ -5,7 +5,7 @@
 CREATE DATABASE finance_dataset;
 
 USE finance_dataset;
--- NOTE: Data was uploaded from CSV using Python (pandas)
+-- NOTE: Data was uploaded from CSV  - see README file for details on data source and upload process
 
 -- STEP 2: Overview data
 
